@@ -1,0 +1,16 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*recovery-codes*
+
+# Manuscript: stays out of the public repo until Bonnie decides on license terms
+*.docx
+
+# Vercel and Next.js
+.vercel
+.next
+out
+node_modules
+
+.DS_Store
