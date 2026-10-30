@@ -1,0 +1,20 @@
+:root {
+  --tr-black: #000000;
+  --tr-white: #ffffff;
+  /* 2.8:1 on white, so never text or thin rules on white. Use it as a fill
+     with black text (7.5:1), or as text on black. */
+  --tr-orange: #f97316;
+
+  --tr-font-heading: 'IBM Plex Mono', ui-monospace, monospace;
+  --tr-font-body: 'IBM Plex Sans', system-ui, sans-serif;
+
+  --tr-rule: 3px solid var(--tr-black);
+  --tr-rule-thin: 2px solid var(--tr-black);
+  --tr-focus: 3px solid var(--tr-black);
+  --tr-focus-offset: 3px;
+
+  --tr-space-s: 0.75rem;
+  --tr-space-m: 1.5rem;
+  --tr-space-l: 3rem;
+  --tr-meta-size: 0.875rem;
+}

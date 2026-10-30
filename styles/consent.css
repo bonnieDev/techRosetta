@@ -1,0 +1,25 @@
+/* In the page flow, never floating, so it can't cover what has focus (WCAG 2.4.11). */
+.consent {
+  padding: var(--tr-space-m);
+  border-bottom: var(--tr-rule);
+}
+
+.consent__inner {
+  max-width: 41rem;
+  margin: 0 auto;
+}
+
+.consent__title {
+  font-size: 1.125rem;
+}
+
+.consent__text {
+  margin-top: var(--tr-space-s);
+}
+
+.consent__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tr-space-s);
+  margin-top: var(--tr-space-m);
+}

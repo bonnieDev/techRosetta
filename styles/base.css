@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--tr-white);
+  color: var(--tr-black);
+  font-family: var(--tr-font-body);
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: var(--tr-font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: var(--tr-focus);
+  outline-offset: var(--tr-focus-offset);
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--tr-space-s);
+  top: -100px;
+  padding: var(--tr-space-s);
+  background: var(--tr-black);
+  color: var(--tr-white);
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: var(--tr-space-s);
+  outline-color: var(--tr-orange);
+}
+
+.button {
+  min-height: 44px;
+  padding: 0.5rem 1.25rem;
+  border: var(--tr-rule);
+  border-radius: 0;
+  background: var(--tr-white);
+  color: var(--tr-black);
+  font-family: var(--tr-font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--tr-orange);
+}

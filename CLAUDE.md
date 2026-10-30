@@ -1,7 +1,9 @@
 # Tech Rosetta
 
-Tech-literacy book series and publishing site. No site code exists yet. Build
-everything below in from the first page.
+Tech-literacy book series and publishing site. So far only a holding page
+exists (`app/page.tsx`), with analytics and the consent banner working. It's
+`noindex` until launch. Everything below goes into the real site from its first
+page.
 
 - Domains: techrosetta.com, techrosetta.co
 - Repo: github.com/bonnieDev/techRosetta (public, so keep the manuscript out
@@ -83,8 +85,22 @@ Parameters: `part`, `section`, `control`, `last_section`, `volume`, `chapter`,
 Known gap: GA is unreliable in mainland China, so Simplified Chinese readers
 there will be undercounted. Don't read that as low demand.
 
+## Accessibility (WCAG 2.2 AA)
+
+The holding page already has, so keep it: skip link, `lang` and `dir`, landmarks,
+real buttons, visible focus from a token, focus handled when the banner closes,
+44px buttons, an in-flow banner, reflow at 320px, no motion. Orange is only ever
+a fill behind black text. axe reports 0 violations with and without the banner.
+
+Bloom is off on the holding page, which has no form and little text. Add it with
+the reading pages.
+
 ## Known gaps
 
+- The consent banner is English only until interface strings go through the
+  translation pipeline.
+- Holding page checked with axe, keyboard paths and small-screen tests only, not
+  yet with a real screen reader.
 - Consent regions and banner wording need attorney review.
 - Contributor rights agreement needs an attorney before the first contribution
   is accepted.
